@@ -1,0 +1,24 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <!-- web项目启动读取顺序
+       1.项目启动时读取 web.xml 文件
+       2.读取 web.xml 文件时检测到监听标签 <listener> ，加载 <listener-class> 标签配置路径的文件并执行（IOC容器的路径）
+       3.根据 <listener> 监听器启动IOC容器，通过 <context-param> 标签里的配置信息，读取相应的配置文件
+   -->
+
+  <!-- 配置Spring ioc容器的配置文件 -->
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath:applicationContext.xml</param-value>
+  </context-param>
+
+  <!-- 使用监听器启动Spring的IOC容器 -->
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+</web-app>
