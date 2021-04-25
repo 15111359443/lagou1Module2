@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="study-lagou-transfer" />
+        <module name="study-lagou-transfer-iocxml" />
+        <module name="SpringStudy-transfer" />
+        <module name="study-lagou-transfer-transaction" />
+        <module name="StudyCode" />
+        <module name="study-lagou-transfer-ioc-xml-anno" />
+        <module name="study-lagou-transfer-ioc-anno" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding=utf-8" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="study-lagou-transfer" options="-parameters" />
+      <module name="study-lagou-transfer-ioc-anno" options="" />
+      <module name="study-lagou-transfer-ioc-xml-anno" options="" />
+      <module name="study-lagou-transfer-iocxml" options="" />
+      <module name="study-lagou-transfer-transaction" options="" />
+    </option>
+  </component>
+</project>

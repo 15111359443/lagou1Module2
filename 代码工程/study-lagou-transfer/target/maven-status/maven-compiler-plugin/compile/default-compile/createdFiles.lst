@@ -1,0 +1,4 @@
+com\lagou\study\annotations\LagouStudyRepository.class
+com\lagou\study\annotations\LagouStudyAutowired.class
+com\lagou\study\annotations\LagouStudyService.class
+com\lagou\study\annotations\LagouStudyTransactional.class
